@@ -42,7 +42,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    alert("In the game you play 5 rounds again computer. After them your score will be displayed on the screen. Click OK to start. GLHF!")
+    alert("In the game you play 5 rounds against computer. After them your score will be displayed on the screen. Click OK to start. GLHF!")
     let playerScore = 0;
     let computerScore = 0;
     for (let i = 0; i < 5; i++) {
