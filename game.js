@@ -50,11 +50,16 @@ function game() {
         console.log(roundResult[0]);
         let whoWon = roundResult[1];
         if (whoWon === 0) { //Draw
+            document.getElementById(`round${i+1}`).innerHTML += "It's a Draw!";
             continue;
         } else if (whoWon === 1) { //Player wins
             playerScore += 1;
+            document.getElementById("player-score").innerHTML = `Player Score: ${playerScore}`;
+            document.getElementById(`round${i+1}`).innerHTML += "Player Wins!";
         } else { //Computer wins
             computerScore += 1;
+            document.getElementById("computer-score").innerHTML = `Computer Score: ${computerScore}`;
+            document.getElementById(`round${i+1}`).innerHTML += "Computer Wins!";
         }
     }
     
